@@ -64,11 +64,14 @@ export default function Products() {
         {filter.map((product) => {
           return (
             <>
-            <div className="col-md-3 mb-4">
-              <div className="card h-100 text-center p-4 pp-4" key={product.id} >
+            <div className="col-md-3 mb-4 ">
+              <div className="card h-100 text-center p-4 pp-4 border-style" key={product.id} >
                 <img src={product.image} className="card-img-top" alt={product.title} height="300vh"/>
                 <div className="card-body">
                   <h5 className="card-title mb-0">{product.title.substring(0,12)}</h5>
+                  <p className="lead ">
+            Rating {product.rating && product.rating.rate }
+            <i className="fa fa-star"style={{color:"rgb(41, 179, 41)"}}> </i></p>
                   <p className="card-text lead fw-bold">
                   ${product.price}
                   </p>

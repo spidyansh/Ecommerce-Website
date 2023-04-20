@@ -1,26 +1,47 @@
 import React from "react";
-import Products from "./Products"
+import Products from "./Products";
+import cloth from "./images/cloth.png";
+import iphone from "./images/iphone.png";
+import shoes from "./images/shoes.png";
 
 export default function Home() {
   return (
     <>
-      <div className="hero">
-        <div className="card text-bg-dark">
-          <img src="..." className="card-img" alt="..." />
-          <div className="card-img-overlay">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">
-              This is a wider card with supporting text below as a natural
-              lead-in to additional content. This content is a little bit
-              longer.
-            </p>
-            <p className="card-text">
-              <small>Last updated 3 mins ago</small>
-            </p>
+      <div
+        id="carouselExampleSlidesOnly"
+        className="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div className="carousel-inner">
+          <div className="carousel-item active" data-bs-interval="3000">
+            <img src={cloth} className="d-block w-100" alt="..." />
+          </div>
+          <div className="carousel-item" data-bs-interval="3000">
+            <img src={iphone} className="d-block w-100" alt="..." />
+          </div>
+          <div className="carousel-item" data-bs-interval="3000">
+            <img src={shoes} className="d-block w-100" alt="..." />
           </div>
         </div>
-      <Products/>
       </div>
+
+      {/* <div className="container text-center">
+        <div className="row">
+          <div className="row w-10">
+            <img src={iphone} alt="" />
+          </div>
+          <div className="col">
+            <div className="row w-10">
+              <img src={iphone} alt="" />
+            </div>
+            <div className="row w-10">
+              <img src={iphone} alt="" />
+            </div>
+          </div>
+        </div>
+      </div> */}
+
+      <Products />
     </>
   );
 }

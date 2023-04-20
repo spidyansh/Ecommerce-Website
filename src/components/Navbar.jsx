@@ -10,7 +10,7 @@ export default function Navbar() {
     <nav className="navbar navbar-expand-lg bg-body-tertiary py-3 shadow-sm bg-white">
   <div className="container-fluid">
     <NavLink className="navbar-brand fw-bold fs-4" to="#">
-      Emart
+      BuyonClick 
     </NavLink>
     <button
       className="navbar-toggler"
