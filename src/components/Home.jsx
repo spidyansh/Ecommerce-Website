@@ -3,10 +3,12 @@ import Products from "./Products";
 import cloth from "./images/cloth.png";
 import iphone from "./images/iphone.png";
 import shoes from "./images/shoes.png";
+import Navbar2 from "./Navbar2";
 
 export default function Home() {
   return (
     <>
+    <Navbar2/>
       <div
         id="carouselExampleSlidesOnly"
         className="carousel slide"
